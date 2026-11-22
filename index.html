@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моето интерактивно портфолио</title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+<body>
+    
+    <header>
+    <nav class="Navigaciq">
+        <li id = "LichniDanni">
+            <a href = "#zaglavieSekcii">
+                Представяне
+            </a>
+        </li>
+
+        <li id = "Plan">
+            <a href = "#zaglavieUchebenPlan"> 
+                Учебен план
+            </a>
+        </li>
+
+        <li id = "buton">
+            <button id = "theme" onclick = "switchTheme">
+                Dark
+            </button>
+        </li>
+
+    </nav>          
+    <span id = "zaglavieSekcii" style = "font-weight: bold">
+        Представяне
+    </span>
+
+    <div class = "sekcii">
+
+       <div id = "intro">
+            <h2>    
+                Здравейте! Аз съм мотивиран софтуерен любител с добър опит в програмирането на C#. Обичам да създавам структурирани конзолни и Windows Forms приложения. 
+            </h2>
+        </div>
+
+        <div id = "interesi">  
+            <h2>
+                Извън програмирането се интересувам от нови технологии и видеоигри.            
+            </h2>
+        </div>
+
+        <div id = "uchastie">  
+            <h2>
+                Искам да участвам в този стаж, защото искам да разширя техническите си познания, да придобия реален практически опит в екипна среда и да надградя уменията си в разработката на софтуер под ръководството на опитни ментори.
+            </h2>
+        </div>
+    </div>
+
+
+
+    </header>    
+
+    <main>
+        <div class = "UchebenPlan">
+            <div id = "zaglavieUchebenPlan">
+                Учебен план
+            </div>
+            <input id = "txt" type = "text">
+            <button id = "btnAdd" onclick="AddGoal">
+                Add
+            </button>
+            <button id = "btnAll" >
+                Всички цели
+            </button>
+            <button id = "btnActiveGoals" > 
+                Активни цели
+            </button>
+            <button id = "btnCompletedGoals" >
+                Завършени цели
+            </button>
+            <div id = "progressStats" style = "margin: 15px 0; font-size: 20px; font-weight: bold;">
+                Общ брой цели: <span id="totalCount">0</span> | 
+                Завършени: <span id="completedCount">0</span> | 
+                Процент на изпълнение: <span id="progressPercent">0%</span>
+            </div>
+            <progress id = "ProgressBar" value = "0" max = "100" style="width: 100%; height: 20px; margin-top: 5px;">
+
+            </progress>
+            <div class = "Goals">
+                <ul id = "goalsList"></ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src = "index.js">
+        
+    </script>
+</body>
+</html>

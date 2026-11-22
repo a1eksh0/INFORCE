@@ -1,0 +1,152 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+.Navigaciq
+{
+    background-color: rgb(207, 198, 177);
+    height: 60px;
+    border-radius: 40px;
+    display: flex;
+    list-style: none;
+    justify-content:left;
+    align-items: center;
+    
+}
+
+.sekcii 
+{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+} 
+
+#zaglavieSekcii 
+{
+    position:absolute;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#zaglavieUchebenPlan 
+{
+    margin-top: 40px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.Navigaciq #theme
+{
+    right: 20px;
+    top: 27px;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.UchebenPlan
+{
+    margin-top: 200px;
+} 
+
+.UchebenPlan #txt
+{
+    width: 200px;
+    height: 15px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.UchebenPlan #btnAdd
+{
+    background-color: rgb(183, 176, 158);
+    border-radius: 15px;
+    border-style: solid;
+    color: rgb(235, 226, 204);
+    margin-right: 10px;
+}
+
+.UchebenPlan #btnAll
+{
+    background-color: rgb(183, 176, 158);
+    border-radius: 15px;
+    border-style: solid;
+    color: rgb(235, 226, 204);
+    margin-right: 10px;
+}
+
+.UchebenPlan #btnActiveGoals
+{
+    background-color: rgb(183, 176, 158);
+    border-radius: 15px;
+    border-style: solid;
+    color: rgb(235, 226, 204);
+    margin-right: 10px;
+}
+
+.UchebenPlan #btnCompletedGoals
+{
+    background-color: rgb(183, 176, 158);
+    border-radius: 15px;
+    border-style: solid;
+    color: rgb(235, 226, 204);
+    margin-right: 10px;
+}
+.UchebenPlan #progressBar 
+{
+    padding: 30px;
+}
+
+#intro, #interesi, #uchastie
+{
+    width: 100%;
+    max-width: 610px;
+    height: 330px;
+    background-color:rgb(183, 176, 158);
+    border-radius: 20px;
+    color: rgb(235, 226, 204);
+    margin-bottom: 40px;
+}
+
+a
+{
+    text-decoration: none;
+    color:black;
+    margin: 10px;
+    font-size: 18px;
+}
+
+body
+{
+    background-color: rgb(235, 226, 204);
+}
+
+@media (max-width: 768px)
+{
+    .sekcii 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Navigaciq
+    {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+#goalsList li 
+{
+    background-color: var(--item-bg, rgb(183, 176, 158)); 
+    color: inherit; 
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
